@@ -1,0 +1,24 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="main">    
+        <h2  class="title"> AIがお城の画像を識別します</h2>
+        <p class="description">AIがお城の画像を識別します　画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="image_choose"><input class="file_choose" type="file" name="file"></div>
+            <div><input class="btn" value="画像を識別する" type="submit"></div>
+        </form>
+        
+        <!-- アップロードされた画像を表示 -->
+        {% if imagefile %}
+         <img class="upload_image" src="{{ url_for('static', filename='uploads/' + imagefile) }}" alt="uploaded image">
+         
+         <div class="img-wrapper"></div>
+        {% endif %}
+        
+        <!-- 予測結果を表示 -->
+        <div class="answer">{{answer}}</div>
+    </div>
+
+{% endblock %}

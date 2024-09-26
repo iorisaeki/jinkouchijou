@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0; 
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; 
+  background-image: url('/static/images/ishigaki.jpg'); 
+}
+/* *********************************
+headerの設定
+*********************************** */
+header {
+  height: 60px;
+  width: 100%;
+  padding: 0px 15px;
+  background-color: rgb(12, 10, 21);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.logo {
+  font-size: 50px;
+  font-family: "HG正楷書体-PRO";
+}
+
+
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #e60606;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+/* *********************************　
+mainの設定
+*********************************** */
+main {
+  padding: 60px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  top: 0;
+
+}
+
+.title {
+  font-size: 30px; /* ここで<h2>の文字サイズを変更 */
+  font-weight: bold; /* 文字を太くする（任意） */
+  color: #364e96; /* 文字の色を変更（任意） */
+}
+
+.description {
+  font-size: 30px; /* ここで<p>の文字サイズを変更 */
+  color: #ffffff; /* 文字の色を変更（任意） */
+  font-weight: bold; /* 文字を太くする（任意） */
+}
+
+.content {
+	box-sizing: border-box;
+	width:50%;
+  background-color:hsl(0, 100%, 50%);
+	color: #666;
+	padding:.7em;
+	margin: 5px auto;
+	border: 3px solid rgb(250, 167, 0);
+	border-radius: 15px;
+	}
+
+.content p { /* p要素に背景や角丸を指定 */
+	margin:5px 0 0;
+	padding:10px;
+	background-color: rgba(71, 159, 177, 0.384);;
+	border-radius:8px;
+  font-size: 40px;
+	}
+
+.content h1 {
+  font-size: 40px;
+  color: #364e96;/* 文字色 */
+  padding: 0.5em 0;/* 上下の余白 */
+  border-top: solid 3px #364e96;/* 上線 */
+  border-bottom: solid 3px #364e96;/* 下線 */
+}
+
+.content span { /* span要素（質問テキスト）をブロック化し横に並べる */
+	width: 48%;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* 「click」ボタンのスタイル */
+.click_btn a {
+  text-align: center;
+  margin: 20px auto;
+  padding: 1px;
+  width: 300px;
+  font-size: 18px;
+  background-color: rgb(246, 123, 123);
+  border-radius: 50vh;
+}
+
+.click_btn a:hover {
+  background-color: rgb(250, 90, 90);
+}
+
+/* 「計算する」ボタンのスタイル */
+.calc_btn [type="submit"]{
+	cursor:pointer;
+  text-align: center;
+	font-size: 18px;
+	font-weight:bold;
+	width:300px;
+	padding:4px 10px;
+	margin:.5em;
+	color:#000000;
+  border:1px solid #bbb;
+  background: #c08b9b;
+	border-radius: 5px;
+}
+
+.calc_btn [type="submit"]:hover {
+	background: #985267;
+	}
+
+/* 面積結果部分 */
+.box{
+  margin:40px auto;
+  position: relative;
+  padding: 0.5em 1.0em;
+  border-top: solid 2px rgb(255, 251, 251);
+  border-bottom: solid 2px rgb(250, 250, 250);
+  background-color:#fff;
+  width:40%;
+  border: solid;
+}
+
+.result{
+  font-weight: bold;
+  color: rgb(246, 123, 123);
+  font-size:35px;
+}
+
+.answer {
+  color: #ffffff; 
+  font-size: 17px; 
+  font-weight: bold; 
+}
+
+/* *********************************　
+footerの設定
+*********************************** */
+footer {
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 30px; /* 高さを指定 */
+  display: inline-block;
+  background: rgb(12, 10, 21); /* 背景色を指定 */
+  text-align: center;
+  position: fixed;
+  bottom:24px;
+}
+
+.footer_logo {
+  line-height: 30px;
+  font-family: "HG正楷書体-PRO";
+  font-size: 30px;
+  color: rgb(249, 0, 0);
+}
+
+
